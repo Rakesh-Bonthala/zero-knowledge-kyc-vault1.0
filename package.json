@@ -1,0 +1,39 @@
+{
+  "name": "zero-knowledge-kyc-vault",
+  "version": "1.0.0",
+  "description": "Zero-Knowledge KYC Vault with client-side Web Crypto AES-256-GCM encryption and multi-adapter cloud storage",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node --test tests/*.test.js",
+    "test:crypto": "node --test tests/crypto.test.js",
+    "test:vault": "node --test tests/vault.test.js"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "kyc",
+    "cryptography",
+    "web-crypto-api",
+    "aes-256-gcm",
+    "pbkdf2",
+    "mongodb",
+    "gridfs"
+  ],
+  "author": "Google Antigravity Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
+
